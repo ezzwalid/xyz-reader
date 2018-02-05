@@ -151,7 +151,6 @@ public class ArticleDetailFragment extends Fragment implements
             return;
         }
 
-
         TextView bylineView = (TextView) mRootView.findViewById(R.id.article_byline);
         TextView bodyView = (TextView) mRootView.findViewById(R.id.article_body);
         bodyView.setMovementMethod(LinkMovementMethod.getInstance());
@@ -170,7 +169,7 @@ public class ArticleDetailFragment extends Fragment implements
                                 publishedDate.getTime(),
                                 System.currentTimeMillis(), DateUtils.HOUR_IN_MILLIS,
                                 DateUtils.FORMAT_ABBREV_ALL).toString()
-                                + " by <font color='#ffffff'>"
+                                + " by <font color='#000000'>"
                                 + mCursor.getString(ArticleLoader.Query.AUTHOR)
                                 + "</font>"));
 

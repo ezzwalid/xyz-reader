@@ -17,14 +17,21 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
             android:layout_marginTop="8dp"
-            android:padding="10dp"
-            tools:text="byline" />
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="@dimen/detail_inner_horiz_margin"
+            android:textColor="#000000"
+            android:text="The byline" />
 
         <TextView
             android:id="@+id/article_byline"
             style="?android:attr/textAppearanceSmall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="@dimen/detail_inner_horiz_margin"
+            android:layout_marginRight="@dimen/detail_inner_horiz_margin"
             android:textColor="@color/primary_text"/>
 
         <TextView
